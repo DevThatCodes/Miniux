@@ -9,7 +9,6 @@ int main()
   std::string osOutCl;
   std::string name;
   int dblQuotId;
-  bool namTim = false;
   std::ifstream osInfo("/etc/os-release");
 
   while (getline(osInfo, osOut))
@@ -27,14 +26,16 @@ int main()
       std::cout << "|\"|";
       if (dblQuotId==4)
       {
+        std::cout << "\n------> " + name + " <------\n";
         osOutCl = "\n------> " + name + " <------\n";
       }
       name = "";
       name += c;
     }
   }
+  osInfo.close();
   std::cout << osOutCl;
 
-  osInfo.close();
+  
   return 0;
 }
