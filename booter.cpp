@@ -7,7 +7,7 @@ using json = nlohmann::json;
 int main()
 {
 
-  std::ifstream f("test.json");
+  std::ifstream f("MiniuxOS/test.json");
   json drvDat = json::parse(f);
   std::string usrNm;
   std::string inPswd;
