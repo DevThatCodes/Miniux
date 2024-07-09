@@ -30,7 +30,7 @@ echo "
 " >> Drive.json
 clear
 echo "Starting install!"
-wget https://github.com/DevThatCodes/Miniux/releases/download/v0.01-alpha/miniux.o  
+wget https://github.com/DevThatCodes/Miniux/releases/download/v0.02-alpha/miniux.o  
 chmod +x miniux.o
 clear
 echo "Done installing Miniux!
