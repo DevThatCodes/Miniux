@@ -1,1 +1,7 @@
 Miniux is a small terminal based mini operating system type thing in c++
+
+to install:
+
+1. install installMiniux.sh
+2. run ./installMiniux.sh in the folder where you put installMiniux.sh
+3. if it gives an error about permission when trying to run ./installMiniux.sh run chmod +x installMiniux.sh and try again 
