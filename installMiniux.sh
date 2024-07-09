@@ -23,15 +23,25 @@ echo "
     \"users\": {
         \"${usrnm}\": {
             \"dsplName\": \"${dsplnm}\",
-            \"password\": \"${pswd}\"
+            \"password\": \"${pswd}\",
+            \"files\": {
+                \"type\": \"directory\",
+                \"content\": {
+
+                    }
+                }
+            }
         }
     }
 }
 " >> Drive.json
 clear
 echo "Starting install!"
-wget https://github.com/DevThatCodes/Miniux/releases/download/v0.02-alpha/miniux.o  
+wget https://github.com/DevThatCodes/Miniux/releases/download/v0.03-alpha/miniux.o  
 chmod +x miniux.o
+mkdir pkgs
+cd pkgs
+wget https://github.com/DevThatCodes/Miniux/releases/download/v0.03-alpha/minipack.min
 clear
 echo "Done installing Miniux!
 To run miniux, run the command: \"cd MiniuxOS && ./miniux.o\""
