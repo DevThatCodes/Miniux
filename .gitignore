@@ -34,3 +34,6 @@
 # Json Files
 *.json
 .vscode/settings.json
+
+# Miniux Packages
+*.min

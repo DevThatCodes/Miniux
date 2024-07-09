@@ -21,6 +21,10 @@ int main()
 		std::cin >> usrIn;
 		if (usrIn == "exit") {
 			return 1;
+		} else {
+			std::string cmdStr = "./pkgs/" + usrIn + ".min";
+			const char* cmd = cmdStr.c_str();
+			int rtrnCd = system(cmd);
 		}
 	}
 
