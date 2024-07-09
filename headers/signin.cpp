@@ -1,10 +1,11 @@
 #include <iostream>
 #include <string>
 #include <fstream>
-#include "json/json.hpp"
+#include "json.hpp"
+#include "signin.hpp"
 using json = nlohmann::json;
 
-int main()
+std::string SignIn::signin()
 {
 
   std::ifstream f("Drive.json");
@@ -27,7 +28,7 @@ int main()
       }
       if (i == usrArr.size() -1 and usrArr[i] != usrNm) {
         std::cout << "No user called \"" + usrNm + "\". Stopping system\n";
-        return 1;
+        return "syssd";
       }
     }
     std::cout << "Enter your password, " + usrNm + ": \n";
@@ -39,8 +40,8 @@ int main()
         break;
       } else if (inPswd != drvDat["users"][usrNm]["password"]) {
         std::cout << "Password incorrect. Stopping system\n";
-        return 1;
+        return "syssd";
       }
     }
-  return 0;
+  return usrNm;
 }
