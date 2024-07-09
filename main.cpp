@@ -14,10 +14,10 @@ int main()
 	}
   std::ifstream f("Drive.json");
   json drvDat = json::parse(f);
-	std::string cwd = usrnm + "@" + (std::string) drvDat["osName"];
+	std::string cwd = "/";
 	std::string usrIn;
 	while (true) {
-		std::cout << cwd + "> ";
+		std::cout << "\033[1;32m" + usrnm + "@" + (std::string) drvDat["osName"] + "\033[0m:\033[1;34m~" + cwd + "\033[0m$ ";
 		std::cin >> usrIn;
 		if (usrIn == "exit") {
 			return 1;

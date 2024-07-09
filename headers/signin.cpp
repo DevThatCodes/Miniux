@@ -27,7 +27,7 @@ std::string SignIn::signin()
         break;
       }
       if (i == usrArr.size() -1 and usrArr[i] != usrNm) {
-        std::cout << "No user called \"" + usrNm + "\". Stopping system\n";
+        std::cout << "\033[1;31mNo user called \"" + usrNm + "\". Stopping system\033[0m\n";
         return "syssd";
       }
     }
@@ -39,7 +39,7 @@ std::string SignIn::signin()
         std::cout << "Correct password, Welcome " + usrNm +"\n";
         break;
       } else if (inPswd != drvDat["users"][usrNm]["password"]) {
-        std::cout << "Password incorrect. Stopping system\n";
+        std::cout << "\033[1;31mPassword incorrect. Stopping system\n\033[0m";
         return "syssd";
       }
     }
