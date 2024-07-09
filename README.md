@@ -1,4 +1,1 @@
-FILES TO DELETE:
-    .gitignore
-    LICENSE
-    REAMDME.md
+Miniux is a small terminal based mini operating system type thing in c++
