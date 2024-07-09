@@ -19,7 +19,7 @@ read -p "> " osIndex
 touch Drive.json
 echo "
 {
-    \"osName\": \"${miniDistros[osIndex]}\",
+    \"osName\": \"${miniDistros[osIndex]} v0.03\",
     \"users\": {
         \"${usrnm}\": {
             \"dsplName\": \"${dsplnm}\",
