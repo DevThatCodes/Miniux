@@ -28,7 +28,6 @@ echo "
                 \"type\": \"directory\",
                 \"content\": {
 
-                    }
                 }
             }
         }
