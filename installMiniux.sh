@@ -4,7 +4,7 @@ usrnm=""
 dsplnm=""
 pswd=""
 osIndex=""
-miniDistros=("Miniuntu" "Miniux Mint" "Minian" "Tinyjaro" "Microarch")
+miniDistros=("Miniuntu" "Miniux Mint" "Minian" "Tinyjaro" "Microarch" "MillOS" "Tinyhat")
 mkdir MiniuxOS
 cd MiniuxOS
 echo "Welcome to the Miniux installer!"
