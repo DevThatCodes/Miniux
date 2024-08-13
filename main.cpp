@@ -22,7 +22,7 @@ int main()
 		if (usrIn == "exit") {
 			return 1;
 		} else {
-			std::string cmdStr = "./pkgs/" + usrIn + ".min";
+			std::string cmdStr = "./pkgs/" + usrIn + ".min " + usrnm + " " + cwd;
 			const char* cmd = cmdStr.c_str();
 			int rtrnCd = system(cmd);
 		}
