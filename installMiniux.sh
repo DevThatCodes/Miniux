@@ -36,11 +36,11 @@ echo "
 " >> Drive.json
 clear
 echo "Starting install!"
-wget https://github.com/DevThatCodes/Miniux/releases/download/v0.04-alpha/miniux.o  
+wget https://github.com/DevThatCodes/Miniux/releases/download/v0.04b-alpha/miniux.o  
 chmod +x miniux.o
 mkdir pkgs
 cd pkgs
-wget https://github.com/DevThatCodes/Miniux/releases/download/v0.04-alpha/minipack.min
+wget https://github.com/DevThatCodes/Miniux/releases/download/v0.04b-alpha/minipack.min
 clear
 echo "Done installing Miniux!
 To run miniux, run the command: \"cd MiniuxOS && ./miniux.o\""
