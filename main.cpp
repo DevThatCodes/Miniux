@@ -33,5 +33,6 @@ int main(int argc, char* argv[])
 		}
 	}
 
+	f.close();
 	return 0;
 }
