@@ -58,6 +58,7 @@
         "span": "cpp",
         "sstream": "cpp",
         "valarray": "cpp",
-        "variant": "cpp"
+        "variant": "cpp",
+        "cinttypes": "cpp"
     }
 }

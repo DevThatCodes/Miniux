@@ -5,10 +5,15 @@
 #include "headers/signin.hpp"
 using json = nlohmann::json;
 
-int main()
+int main(int argc, char* argv[])
 {
 	SignIn signin;
-	std::string usrnm = signin.signin();
+	std::string usrnm;
+	if (argc==2) {
+		usrnm=argv[1];
+	} else if (argc==1) {
+	usrnm = signin.signin();
+	}
 	if (usrnm == "syssd") {
 		return 1;
 	}
