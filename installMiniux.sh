@@ -25,10 +25,7 @@ echo "
             \"dsplName\": \"${dsplnm}\",
             \"password\": \"${pswd}\",
             \"files\": {
-                \"type\": \"directory\",
-                \"content\": {
-
-                }
+            
             }
         }
     }
