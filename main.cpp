@@ -43,10 +43,11 @@ int main(int argc, char* argv[])
                 }
             }
             std::string cmd = "./pkgs/" + args[0] + ".min ";
+            args.erase(args.begin());
             for (auto& arg : args) {
                 cmd += arg + " ";
             }
-			int rtrnCd = system(cmd.c_str());
+            int rtrnCd = system(cmd.c_str());
 		}
 	}
 
