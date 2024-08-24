@@ -1,4 +1,5 @@
 Miniux is a small terminal based mini operating system type thing in c++
+NOTE: Miniux only works on linux due to it using various linux commands
 
 to install:
 
