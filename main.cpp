@@ -26,9 +26,13 @@ int main(int argc, char* argv[])
 	while (true) {
 		std::cout << "\033[1;32m" + usrnm + "@" + (std::string) drvDat["osName"] + "\033[0m:\033[1;34m~" + cwd + "\033[0m$ ";
 		getline(std::cin, usrIn);
-		if (usrIn == "exit") {
+        if (usrIn == "") {
+            std::cout << "\r";
+        } else if (usrIn == "exit") {
 			return 1;
-		} else {
+		} else if (usrIn == "clear") {
+            system("clear");
+        } else {
             std::string arg = "";
             std::vector<std::string> args;
             for (int i=0;i<usrIn.size();i++) {
