@@ -19,7 +19,7 @@ read -p "> " osIndex
 touch Drive.json
 echo "
 {
-    \"osName\": \"${miniDistros[osIndex]} v0.04\",
+    \"osName\": \"${miniDistros[osIndex]} v0.05\",
     \"users\": {
         \"${usrnm}\": {
             \"dsplName\": \"${dsplnm}\",
@@ -37,7 +37,7 @@ wget https://github.com/DevThatCodes/Miniux/releases/latest/download/miniux.o
 chmod +x miniux.o
 mkdir pkgs
 cd pkgs
-wget https://github.com/DevThatCodes/Miniux/releases/download/v0.04b-alpha/minipack.min
+wget https://github.com/Miniux-Package-Microrepo/minipack/releases/latest/download/minipack.min
 clear
 echo "Done installing Miniux!
 To run miniux, run the command: \"cd MiniuxOS && ./miniux.o\""
